@@ -1,0 +1,27 @@
+.footer-socials a:hover,
+.footer-socials a:focus {
+  background-color: $accent-color;
+}
+
+.footer-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+.footer-socials a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: $white-color;
+
+  transition: background-color 250ms $transit;
+}
+
+.subscribe li:not(:last-child) {
+  margin-right: 10px;
+}
