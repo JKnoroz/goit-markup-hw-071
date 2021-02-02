@@ -1,16 +1,10 @@
 @import 'base/fonts';
 @import 'base/defaults';
 @import 'utils/_variables';
+@import "layout/header";
 
-/* navigation */
-.main-nav {
-  display: flex;
-  align-items: center;
-}
 
-header {
-  border-bottom: 1px solid #ececec;
-}
+
 
 .logo {
   font-family: $secondary-font-family, sans-serif;
@@ -462,7 +456,7 @@ h1 {
   font-weight: $bold-font-weight;
   font-size: $large-font-size;
   line-height: 2;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   text-align: left;
   color: $primary-text-color;
   margin-bottom: 4px;
