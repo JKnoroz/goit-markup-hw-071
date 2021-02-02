@@ -155,6 +155,39 @@ img {
   height: auto;
 }
 
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-right: 93px;
+}
+
+.logo span {
+  color: #2196f3;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  border-radius: 4px;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -252,20 +285,6 @@ header .link {
   border-radius: 2px;
 }
 
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: #000000;
-  margin-right: 93px;
-}
-
-.logo span {
-  color: #2196f3;
-}
-
 .hero {
   max-width: 1600px;
   height: 600px;
@@ -290,25 +309,6 @@ h1 {
   color: #ffffff;
   margin-top: 0;
   margin-bottom: 30px;
-}
-
-.button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
-  border-radius: 4px;
-  min-width: 200px;
-  height: 50px;
-  padding: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  display: inline-block;
-  cursor: pointer;
 }
 
 .features .item {
@@ -349,7 +349,6 @@ h1 {
   margin-bottom: 10px;
 }
 
-/* WeDo */
 .wedo .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -389,7 +388,6 @@ h1 {
   margin-bottom: 0;
 }
 
-/* Team */
 .team .team-member:not(:last-child) {
   margin-right: 30px;
 }
@@ -472,7 +470,6 @@ h1 {
   margin-right: 10px;
 }
 
-/* Clients */
 .clients a {
   width: 170px;
   height: 90px;

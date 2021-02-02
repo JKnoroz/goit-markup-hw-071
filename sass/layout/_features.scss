@@ -1,0 +1,37 @@
+.features .item {
+  width: calc((100% - 90px) / 4);
+}
+
+.features .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-icon {
+  height: 120px;
+  width: 100%;
+  display: block;
+  padding: 25px 100px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features p,
+.features h3 {
+  font-size: $small-font-size;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+}
+
+.features p {
+  color: $secondary-text-color;
+  line-height: 1.71;
+  margin-bottom: 0px;
+}
+
+.features h3 {
+  font-weight: $bold-font-weight;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}

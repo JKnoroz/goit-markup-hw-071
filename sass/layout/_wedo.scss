@@ -1,0 +1,38 @@
+.wedo .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.wedo {
+  padding-top: 0px;
+}
+
+.wedo-card {
+  position: relative;
+}
+
+.wedo-card img {
+  display: block;
+}
+
+.wedo-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  margin: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.wedo-description p {
+  font-weight: $bold-font-weight;
+  font-size: $small-font-size;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 27px;
+  margin-top: 0;
+  margin-bottom: 0;
+}

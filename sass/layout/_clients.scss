@@ -1,0 +1,27 @@
+.clients a {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  color: #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: border-color 250ms $transit, color 250ms $transit;
+}
+
+.clients li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients a:hover,
+.clients a:focus {
+  border-color: $accent-color;
+  color: $accent-color;
+  cursor: pointer;
+}
+
+.clients-icon {
+  fill: currentColor;
+}
