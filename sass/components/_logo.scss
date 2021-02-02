@@ -4,16 +4,19 @@
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
+  span {
+    color: $accent-color;
+  }
+}
+
+header .logo {
   color: $logoblack-color;
   margin-right: 93px;
 }
 
-.logo span {
-  color: $accent-color;
-}
-
 footer .logo {
   color: $white-color;
-  display: inline-block;
   margin-bottom: 20px;
+  display: inline-block;
 }
