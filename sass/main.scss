@@ -1,10 +1,7 @@
 @import 'base/fonts';
 @import 'base/defaults';
 @import 'utils/_variables';
-@import "layout/header";
-
-
-
+@import 'layout/header';
 
 .logo {
   font-family: $secondary-font-family, sans-serif;
@@ -376,14 +373,14 @@ h1 {
 }
 
 .projects {
-  margin-left: calc((-1) * #{$project-card-gap});
-  margin-top: calc((-1) * #{$project-card-gap});
+  margin-left: calc((-1) * 30px);
+  margin-top: calc((-1) * 30px);
 }
 
 .projects > .project {
-  flex-basis: calc(100% / 3-$project-card-gap);
-  margin-left: $project-card-gap;
-  margin-top: $project-card-gap;
+  flex-basis: calc(100%/3-30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .projects a {
