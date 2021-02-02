@@ -87,6 +87,12 @@
   /* Legacy iOS */
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+  background-color: #ffffff;
+}
+
 section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -149,7 +155,6 @@ img {
   height: auto;
 }
 
-/* navigation */
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,20 +166,6 @@ img {
 
 header {
   border-bottom: 1px solid #ececec;
-}
-
-.logo {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: #000000;
-  margin-right: 93px;
-}
-
-.logo span {
-  color: #2196f3;
 }
 
 header .link {
@@ -261,7 +252,20 @@ header .link {
   border-radius: 2px;
 }
 
-/* hero */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-right: 93px;
+}
+
+.logo span {
+  color: #2196f3;
+}
+
 .hero {
   max-width: 1600px;
   height: 600px;
@@ -307,7 +311,6 @@ h1 {
   cursor: pointer;
 }
 
-/* features */
 .features .item {
   width: calc((100% - 90px) / 4);
 }
@@ -556,8 +559,8 @@ h1 {
 }
 
 .projects > .project {
-  -ms-flex-preferred-size: calc(100% / 3-$project-card-gap);
-      flex-basis: calc(100% / 3-$project-card-gap);
+  -ms-flex-preferred-size: calc(100% / 3-30px);
+      flex-basis: calc(100% / 3-30px);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -583,6 +586,7 @@ h1 {
 .project-description {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
+  max-width: 100%;
 }
 
 .project-photo {
@@ -635,7 +639,7 @@ h1 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-align: left;
   color: #212121;
   margin-bottom: 4px;
@@ -697,7 +701,7 @@ address p {
 
 .subscribe p,
 .sendmail b {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -822,7 +826,7 @@ address p {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);

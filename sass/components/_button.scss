@@ -1,0 +1,16 @@
+.button {
+  font-weight: $bold-font-weight;
+  font-size: $standart-font-size;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  background-color: $accent-color;
+  border-radius: 4px;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}

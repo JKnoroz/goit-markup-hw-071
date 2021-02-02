@@ -1,151 +1,10 @@
 @import 'base/fonts';
-@import 'base/defaults';
 @import 'utils/_variables';
+@import 'base/defaults';
 @import 'layout/header';
-
-.logo {
-  font-family: $secondary-font-family, sans-serif;
-  font-weight: $bold-font-weight;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: $logoblack-color;
-  margin-right: 93px;
-}
-
-.logo span {
-  color: $accent-color;
-}
-
-header .link {
-  font-weight: 500;
-  font-size: $small-font-size;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: inherit;
-  display: block;
-  padding: 32px 0;
-}
-
-.contacts {
-  display: flex;
-  margin-left: auto;
-}
-
-.contacts li + li {
-  margin-left: 50px;
-}
-
-.contacts a {
-  font-size: $standart-font-size;
-  line-height: 1;
-  display: inline-flex;
-  align-items: center;
-}
-
-.contacts-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.contact {
-  color: $secondary-text-color;
-}
-
-.menu .link,
-.contacts .link {
-  transition: color 250ms $transit;
-}
-
-.link.current {
-  color: $accent-color;
-}
-
-.menu .link:hover,
-.menu .link:focus,
-.contacts li :hover,
-.contacts li :focus {
-  color: $accent-color;
-}
-
-.menu {
-  display: flex;
-}
-
-.menu .menu-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.menu a {
-  position: relative;
-}
-
-.menu .link.current::after {
-  content: '';
-
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: $accent-color;
-  border-radius: 2px;
-}
-
-/* hero */
-
-.hero {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url('../images/hero.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  text-align: center;
-  background-color: #2f303a;
-  padding: 200px 0px;
-}
-
-h1 {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $white-color;
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-
-.button {
-  font-weight: $bold-font-weight;
-  font-size: $standart-font-size;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: $white-color;
-  background-color: $accent-color;
-  border-radius: 4px;
-  min-width: 200px;
-  height: 50px;
-  padding: 10px;
-  align-items: center;
-  text-align: center;
-  display: inline-block;
-  cursor: pointer;
-}
-
-/* features */
+@import 'components/logo';
+@import 'layout/hero';
+@import 'components/button';
 
 .features .item {
   width: calc((100% - 90px) / 4);
@@ -378,7 +237,7 @@ h1 {
 }
 
 .projects > .project {
-  flex-basis: calc(100%/3-30px);
+  flex-basis: calc(100% / 3-30px);
   margin-left: 30px;
   margin-top: 30px;
 }
