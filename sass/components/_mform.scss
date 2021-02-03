@@ -6,25 +6,12 @@
   color: $secondary-text-color;
 }
 
-.modal p {
-  font-weight: $bold-font-weight;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: $primary-text-color;
-
-  margin-bottom: 12px;
-  margin-top: 0px;
-}
-
-.modal #comment {
+.mform #comment {
   padding: 12px $standart-font-size;
   height: 120px;
 }
 
-.modal textarea::placeholder {
+.mform textarea::placeholder {
   font-size: $small-font-size;
   line-height: 1.14;
   letter-spacing: 0.01em;
@@ -35,28 +22,28 @@
 .mform-field {
   display: flex;
   flex-direction: column;
-}
 
-.mform .mform-field:not(:nth-child(4)) {
-  margin-bottom: 10px;
-}
+  .mform &:not(:nth-child(4)) {
+    margin-bottom: 10px;
+  }
 
-.mform-field input,
-.mform-field textarea {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  padding: 10px;
-  width: 100%;
-}
+  & input,
+  & textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+  }
 
-.mform-field input {
-  padding-left: 42px;
+  & input {
+    padding-left: 42px;
 
-  transition: border-color 250ms $transit, fill 250ms $transit;
-}
+    transition: border-color 250ms $transit, fill 250ms $transit;
+  }
 
-.mform-field label {
-  margin-bottom: 4px;
+  & label {
+    margin-bottom: 4px;
+  }
 }
 
 .input-field {
