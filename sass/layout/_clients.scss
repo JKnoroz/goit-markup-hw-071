@@ -8,18 +8,19 @@
   align-items: center;
   justify-content: center;
 
-  transition: border-color 250ms $transit, color 250ms $transit;
+  @include transit(color);
+  @include transit(border-color);
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+    cursor: pointer;
+  }
 }
 
 .clients li:not(:last-child) {
   margin-right: 30px;
-}
-
-.clients a:hover,
-.clients a:focus {
-  border-color: $accent-color;
-  color: $accent-color;
-  cursor: pointer;
 }
 
 .clients-icon {

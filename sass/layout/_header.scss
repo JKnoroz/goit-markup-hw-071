@@ -44,7 +44,7 @@ header .link {
 
 .menu .link,
 .contacts .link {
-  transition: color 250ms $transit;
+  @include transit(color);
 }
 
 .link.current {

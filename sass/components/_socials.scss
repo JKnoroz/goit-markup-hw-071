@@ -21,7 +21,8 @@
 
   background: rgba(255, 255, 255, 0.1);
 
-  transition: background-color 250ms $transit, color 250ms $transit;
+  @include transit(background-color);
+  @include transit(color);
 
   .team-member & {
     color: #afb1b8;

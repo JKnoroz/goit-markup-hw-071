@@ -42,7 +42,8 @@
     left: 0;
     transform: translateY(-50%);
 
-    transition: background-color 250ms $transit, border-color 250ms $transit;
+    @include transit(background-color);
+    @include transit(border-color);
   }
 }
 
