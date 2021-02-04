@@ -3,7 +3,7 @@
   text-align: center;
 
   & .team-member:not(:last-child) {
-    margin-right: 30px;
+    margin-right: $project-card-gap;
   }
 
   & .team-member {
@@ -17,7 +17,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
-  & h3 {
+  h3 {
     font-size: $standart-font-size;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -26,7 +26,7 @@
     margin-bottom: 10px;
   }
 
-  & p {
+  p {
     color: $secondary-text-color;
     margin-bottom: $standart-font-size;
     margin-top: 0;

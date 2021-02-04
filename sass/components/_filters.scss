@@ -22,9 +22,9 @@
   border: 2px solid transparent;
   cursor: pointer;
 
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: $transit;
+  @include transit(background-color);
+  @include transit(color);
+  @include transit(box-shadow);
 
   &:focus,
   &:hover {

@@ -349,6 +349,14 @@ summary {
   /* Legacy iOS */
 }
 
+.feature-description, .feature, .wedo-description p, .subscribe p,
+.sendmail b {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
@@ -497,14 +505,14 @@ footer .logo {
   display: inline-block;
   border: 2px solid transparent;
   cursor: pointer;
-  -webkit-transition-property: background-color, color, -webkit-box-shadow;
-  transition-property: background-color, color, -webkit-box-shadow;
-  transition-property: background-color, color, box-shadow;
-  transition-property: background-color, color, box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-filter button:focus, .projects-filter button:hover {
@@ -892,15 +900,25 @@ header .link {
   padding: 32px 0;
 }
 
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu a {
+  position: relative;
+}
+
 .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
-}
-
-.contacts li + li {
-  margin-left: 50px;
 }
 
 .contacts a {
@@ -912,6 +930,10 @@ header .link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.contacts li + li {
+  margin-left: 50px;
 }
 
 .contacts-icon {
@@ -933,28 +955,7 @@ header .link {
   color: #2196f3;
 }
 
-.menu .link:hover,
-.menu .link:focus,
-.contacts li :hover,
-.contacts li :focus {
-  color: #2196f3;
-}
-
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.menu .menu-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.menu a {
-  position: relative;
-}
-
-.menu .link.current::after {
+.link.current::after {
   content: '';
   position: absolute;
   left: 0;
@@ -964,6 +965,13 @@ header .link {
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
+}
+
+.menu .link:hover,
+.menu .link:focus,
+.contacts li :hover,
+.contacts li :focus {
+  color: #2196f3;
 }
 
 .hero {
@@ -1010,21 +1018,13 @@ h1 {
   margin-bottom: 30px;
 }
 
-.features p,
-.features h3 {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  margin-top: 0px;
-}
-
-.features p {
+.feature-description {
   color: #757575;
   line-height: 1.71;
   margin-bottom: 0px;
 }
 
-.features h3 {
+.feature {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -1058,14 +1058,10 @@ h1 {
 
 .wedo-description p {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
   padding-top: 27px;
-  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -1150,8 +1146,8 @@ h1 {
 }
 
 .projects > .project {
-  -ms-flex-preferred-size: calc(100% / 3-$project-card-gap);
-      flex-basis: calc(100% / 3-$project-card-gap);
+  -ms-flex-preferred-size: calc(100% / 3-30px);
+      flex-basis: calc(100% / 3-30px);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -1197,12 +1193,8 @@ address p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1, 14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 0px;
   margin-bottom: 20px;
   display: block;
 }

@@ -1,9 +1,9 @@
 .features .item {
   width: calc((100% - 90px) / 4);
-}
 
-.features .item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: $project-card-gap;
+  }
 }
 
 .features-icon {
@@ -16,21 +16,15 @@
   margin-bottom: 30px;
 }
 
-.features p,
-.features h3 {
-  font-size: $small-font-size;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  margin-top: 0px;
-}
-
-.features p {
+.feature-description {
+  @extend %text;
   color: $secondary-text-color;
   line-height: 1.71;
   margin-bottom: 0px;
 }
 
-.features h3 {
+.feature {
+  @extend %text;
   font-weight: $bold-font-weight;
   text-transform: uppercase;
   margin-bottom: 10px;

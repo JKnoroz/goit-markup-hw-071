@@ -5,32 +5,44 @@
 
 header {
   border-bottom: 1px solid #ececec;
+
+  .link {
+    font-weight: 500;
+    font-size: $small-font-size;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: inherit;
+    display: block;
+    padding: 32px 0;
+  }
 }
 
-header .link {
-  font-weight: 500;
-  font-size: $small-font-size;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: inherit;
-  display: block;
-  padding: 32px 0;
+.menu {
+  display: flex;
+
+  &-item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  a {
+    position: relative;
+  }
 }
 
 .contacts {
   display: flex;
   margin-left: auto;
+
+  a {
+    font-size: $standart-font-size;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+  }
 }
 
 .contacts li + li {
   margin-left: 50px;
-}
-
-.contacts a {
-  font-size: $standart-font-size;
-  line-height: 1;
-  display: inline-flex;
-  align-items: center;
 }
 
 .contacts-icon {
@@ -49,6 +61,20 @@ header .link {
 
 .link.current {
   color: $accent-color;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
 }
 
 .menu .link:hover,
@@ -56,30 +82,4 @@ header .link {
 .contacts li :hover,
 .contacts li :focus {
   color: $accent-color;
-}
-
-.menu {
-  display: flex;
-}
-
-.menu .menu-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.menu a {
-  position: relative;
-}
-
-.menu .link.current::after {
-  content: '';
-
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: $accent-color;
-  border-radius: 2px;
 }

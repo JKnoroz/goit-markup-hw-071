@@ -8,15 +8,15 @@
   span {
     color: $accent-color;
   }
-}
 
-header .logo {
-  color: $logoblack-color;
-  margin-right: 93px;
-}
+  header & {
+    color: $logoblack-color;
+    margin-right: 93px;
+  }
 
-footer .logo {
-  color: $white-color;
-  margin-bottom: 20px;
-  display: inline-block;
+  footer & {
+    color: $white-color;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
 }
